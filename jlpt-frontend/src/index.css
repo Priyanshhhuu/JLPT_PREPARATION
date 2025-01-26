@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+body {
+  scroll-behavior: smooth;
+}
+.banner-container {
+  background-image: url("https://th.bing.com/th/id/OIP.i13eKsXhHnUgKcI29m6CVwHaE5?w=226&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+}
+
+.banner-text {
+  background-image: url("https://e0.pxfuel.com/wallpapers/358/781/desktop-wallpaper-mount-fuji-mount-fuji-cherry-blossom.jpg");
+  background-size: cover;
+  font-weight: 800;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #403f3f -278.56%,
+    #1f1f1f -78.47%,
+    #11101d 91.61%
+  );
+}
+.box-shadow {
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+}
+.card-hover:hover {
+  background: linear-gradient(
+    144.39deg,
+    #6b6969 -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+  box-shadow: 0px 20px 100px -10px rgba(66, 71, 91, 0.1);
+  transform: scale(105%);
+}
