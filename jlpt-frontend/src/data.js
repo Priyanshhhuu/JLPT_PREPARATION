@@ -175,18 +175,6 @@ export let jlpt = [
         chapter: 19,
         title: "Countries",
       },
-      {
-        chapter: 20,
-        title: "Languages",
-      },
-      {
-        chapter: 21,
-        title: "Grammar",
-      },
-      {
-        chapter: 22,
-        title: "Kanji",
-      },
     ],
   },
 ];
