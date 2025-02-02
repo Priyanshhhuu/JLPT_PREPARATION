@@ -13,7 +13,7 @@ const Banner = () => {
           <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-6 leading-tight banner-text">
             Master JLPT Like a Pro!
           </h1>
-          <p className="text-lg md:text-xl text-gray-200 mb-8 hidden ">
+          <p className="text-lg md:text-xl text-gray-200 mb-8">
             Join us on a journey to conquer the Japanese Language Proficiency
             Test. From N5 to N1, we've got lessons, tests, and resources to
             guide you every step of the way.

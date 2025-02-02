@@ -26,11 +26,7 @@ const Navbar = () => {
           <Link to="/about" className="hover:text-gray-300 transition">
             About Us
           </Link>
-          <div
-            className="relative"
-            onMouseEnter={() => setSubmenu(true)}
-            onMouseLeave={() => setSubmenu(false)}
-          >
+          <div className="relative" onClick={() => setSubmenu((prev) => !prev)}>
             <span className="hover:text-gray-300 transition cursor-pointer">
               Test
             </span>
