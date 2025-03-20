@@ -131,7 +131,7 @@ const HomePage = () => {
         <div className="flex justify-center gap-6 mb-8">
           <button
             onClick={() => setExam("jlpt")}
-            className={`px-6 py-2 rounded-full transition-all duration-300 ${
+            className={`px-6 py-2 rounded-full transition-all duration-300 cursor-pointer ${
               exam === "jlpt"
                 ? "bg-yellow-500 text-black scale-110"
                 : "bg-gray-700 text-white hover:bg-gray-600"
@@ -141,7 +141,7 @@ const HomePage = () => {
           </button>
           <button
             onClick={() => setExam("jlct")}
-            className={`px-6 py-2 rounded-full transition-all duration-300 ${
+            className={`px-6 py-2 rounded-full transition-all duration-300 cursor-pointer ${
               exam === "jlct"
                 ? "bg-yellow-500 text-black scale-110"
                 : "bg-gray-700 text-white hover:bg-gray-600"
@@ -151,7 +151,7 @@ const HomePage = () => {
           </button>
           <button
             onClick={() => setExam("nat-test")}
-            className={`px-6 py-2 rounded-full transition-all duration-300 ${
+            className={`px-6 py-2 rounded-full transition-all duration-300 cursor-pointer ${
               exam === "nat-test"
                 ? "bg-yellow-500 text-black scale-110"
                 : "bg-gray-700 text-white hover:bg-gray-600"
@@ -169,7 +169,7 @@ const HomePage = () => {
           <div className="flex-1">
             <h3 className="text-2xl font-bold mb-4">{title}</h3>
             <p className="text-gray-400 mb-6">{description}</p>
-            <button className="bg-yellow-500 text-black px-6 py-2 rounded-full hover:bg-yellow-600 transition-all duration-300">
+            <button className="bg-yellow-500 cursor-pointer text-black px-6 py-2 rounded-full hover:bg-yellow-600 transition-all duration-300">
               Register
             </button>
           </div>

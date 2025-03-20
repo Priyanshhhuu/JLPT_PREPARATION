@@ -20,31 +20,29 @@ const Navbar = () => {
           <Link to="/" className="hover:text-gray-300 transition">
             Home
           </Link>
-          <Link to="/lessons" className="hover:text-gray-300 transition">
-            Lessons
-          </Link>
+
           <Link to="/about" className="hover:text-gray-300 transition">
             About Us
           </Link>
           <div className="relative" onClick={() => setSubmenu((prev) => !prev)}>
             <span className="hover:text-gray-300 transition cursor-pointer">
-              Test
+              Vocabulary
             </span>
             {submenu && (
               <div className="absolute top-8 left-0 bg-gray-800 w-40 p-3 rounded-lg shadow-lg z-10">
-                <Link to="/test/n5" className="block hover:text-gray-400 py-1">
+                <Link to="/vocab/n5" className="block hover:text-gray-400 py-1">
                   N5
                 </Link>
-                <Link to="/test/n4" className="block hover:text-gray-400 py-1">
+                <Link to="/vocab/n4" className="block hover:text-gray-400 py-1">
                   N4
                 </Link>
-                <Link to="/test/n3" className="block hover:text-gray-400 py-1">
+                <Link to="/vocab/n3" className="block hover:text-gray-400 py-1">
                   N3
                 </Link>
-                <Link to="/test/n2" className="block hover:text-gray-400 py-1">
+                <Link to="/vocab/n2" className="block hover:text-gray-400 py-1">
                   N2
                 </Link>
-                <Link to="/test/n1" className="block hover:text-gray-400 py-1">
+                <Link to="/vocab/n1" className="block hover:text-gray-400 py-1">
                   N1
                 </Link>
               </div>
