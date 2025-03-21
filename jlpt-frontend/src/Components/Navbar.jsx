@@ -5,7 +5,7 @@ import { Menu, X } from "lucide-react";
 const Navbar = () => {
   const [submenu, setSubmenu] = useState(false); // For desktop submenu
   const [mobileMenu, setMobileMenu] = useState(false); // For mobile menu toggle
-
+  const [kanjisubmenu, setKanjisubmenu] = useState(false); // For desktop submenu
   return (
     <div className="bg-black text-white w-full shadow-md">
       {/* Navbar Container */}
@@ -24,7 +24,13 @@ const Navbar = () => {
           <Link to="/about" className="hover:text-gray-300 transition">
             About Us
           </Link>
-          <div className="relative" onClick={() => setSubmenu((prev) => !prev)}>
+          <div
+            className="relative"
+            onClick={() => {
+              setSubmenu((prev) => !prev);
+              setKanjisubmenu(false);
+            }}
+          >
             <span className="hover:text-gray-300 transition cursor-pointer">
               Vocabulary
             </span>
@@ -48,9 +54,36 @@ const Navbar = () => {
               </div>
             )}
           </div>
-          <Link to="/books" className="hover:text-gray-300 transition">
-            Books
-          </Link>
+          <div
+            className="relative"
+            onClick={() => {
+              setKanjisubmenu((prev) => !prev);
+              setSubmenu(false);
+            }}
+          >
+            <span className="hover:text-gray-300 transition cursor-pointer">
+              Kanji
+            </span>
+            {kanjisubmenu && (
+              <div className="absolute top-8 left-0 bg-gray-800 w-40 p-3 rounded-lg shadow-lg z-10">
+                <Link to="/kanji/n5" className="block hover:text-gray-400 py-1">
+                  N5
+                </Link>
+                <Link to="/kanji/n4" className="block hover:text-gray-400 py-1">
+                  N4
+                </Link>
+                <Link to="/kanji/n3" className="block hover:text-gray-400 py-1">
+                  N3
+                </Link>
+                <Link to="/kanji/n2" className="block hover:text-gray-400 py-1">
+                  N2
+                </Link>
+                <Link to="/kanji/n1" className="block hover:text-gray-400 py-1">
+                  N1
+                </Link>
+              </div>
+            )}
+          </div>
           <Link to="/contact" className="hover:text-gray-300 transition">
             Contact Us
           </Link>

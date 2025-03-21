@@ -6,6 +6,7 @@ import Lessons from "./Pages/Lessons";
 import ReadPage from "./Pages/ReadPage";
 import Footer from "./Components/Footer";
 import Vocab from "./Pages/Vocab";
+import Kanji from "./Pages/Kanji";
 const App = () => {
   return (
     <div className="bg-[#111] min-h-screen">
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/jlpt-level/:id" element={<Lessons />} />
         <Route path="/jlpt-level/:id/chapter/:chapter" element={<ReadPage />} />
         <Route path="/vocab/:id" element={<Vocab />} />
+        <Route path="/kanji/:id" element={<Kanji />} />
       </Routes>
       <Footer />
     </div>
